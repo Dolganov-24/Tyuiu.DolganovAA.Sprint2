@@ -5,17 +5,7 @@ namespace Tyuiu.DolganovAA.Sprint2.Task1.V26.Lib
     {
         public bool[] GetLogicOperations(int a, int b, int c, int d)
         {
-            bool[] res = new bool[6];
-            res[0] = (a > b) | (c < d);
-            res[1] = (a + 2 > b) & (c < d);
-            res[2] = (a > b) || (c < d);
-            res[3] = (a + 2 > b) && (c < d);
-            res[4] = !(!res[0]);
-            res[5] = (a > b) ^ (c < d);
-
-            return res;
-
-
+            return [a == b | a == a, b == b & c == c, a == a || a == b, a == b && a == a, !(a == b), a == b ^ a == b];
         }
     }
 }

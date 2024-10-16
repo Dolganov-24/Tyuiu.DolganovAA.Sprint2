@@ -6,6 +6,7 @@ namespace Tyuiu.DolganovAA.Sprint2.Task1.V26
         static void Main(string[] args)
         {
             DataService ds = new DataService();
+            bool[] res;
             Console.Title = "Спринт 1 | Выполнил: Долганов А.А. | СМАРТб-24-1";
             Console.WriteLine("******************************************************************************");
             Console.WriteLine("* Спринт №2                                                                  *");
@@ -22,24 +23,26 @@ namespace Tyuiu.DolganovAA.Sprint2.Task1.V26
             Console.WriteLine("******************************************************************************");
             Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ :                                                          *");
             Console.WriteLine("******************************************************************************");
-            int a = 654;
-            int b = 671;
-            int c = 874;
-            int d = 137;
-            bool[] res = new bool[6];
-            res = ds.GetLogicOperations(a, b, c, d);
-
-            Console.WriteLine("a = " + a);
-            Console.WriteLine("b = " + b);
-            Console.WriteLine("c = " + c);
-            Console.WriteLine("d = " + d);
+           
+            Console.Write("* a = ");
+            int a = Convert.ToInt32(Console.ReadLine());
+            Console.Write("* b = ");
+            int b = Convert.ToInt32(Console.ReadLine());
+            Console.Write("* c = ");
+            int c = Convert.ToInt32(Console.ReadLine());
+            Console.Write("* d = ");
+            int d = Convert.ToInt32(Console.ReadLine());
 
             Console.WriteLine("******************************************************************************");
             Console.WriteLine("* РЕЗУЛЬТАТ  :                                                               *");
             Console.WriteLine("******************************************************************************");
-            for (int i = 0; i < 6; i++)
+            { 
+                res = ds.GetLogicOperations(a, b, c, d);
+                }
+
+            foreach (var item in res)
             {
-                Console.WriteLine(res[i]);
+                Console.WriteLine(item.ToString());
             }
             Console.ReadKey();
         }

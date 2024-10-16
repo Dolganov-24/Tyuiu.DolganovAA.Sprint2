@@ -19,6 +19,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tyuiu.DolganovAA.Sprint2.Ta
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tyuiu.DolganovAA.Sprint2.Task1.V26.Lib", "Tyuiu.DolganovAA.Sprint2.Task1.V26.Lib\Tyuiu.DolganovAA.Sprint2.Task1.V26.Lib.csproj", "{C17D9BD5-84B3-4867-B37C-D8AA97C4312B}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Task2", "Task2", "{BA2D7783-C4E7-469D-AAC8-C9223766E091}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
